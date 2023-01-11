@@ -1,0 +1,180 @@
+:root {
+    --blue: rgb(33, 111, 177);
+    --cyan: rgb(44, 153, 163);
+    --grey: rgb(57, 57, 59);
+    --white: #ffffff;
+    --black: #000;
+}
+
+
+.header {
+    background-color: var(--blue);
+    padding: 5px 0px;
+    text-align: center;
+    width: 100%;
+    color: var(--white);
+    text-shadow: 3px 3px var(--grey);
+}
+
+
+.header2 {
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.header2>div {
+    width: 70%;
+    text-align: center;
+}
+
+
+.header2>h1,
+.header2>h2 {
+    color: var(--white);
+}
+
+
+.header2__sub {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+}
+
+.section>div {
+    width: 40%;
+    text-align: justify;
+}
+
+.section__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__2>div:first-child {
+    color: var(--white);
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--grey);
+}
+
+
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+        "box1 box1 box1"
+        "box2 box3 box4";
+}
+
+.sub_boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+    margin: 30px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.box_1 {
+    grid-area: box1;
+    place-self: center;
+    text-align: center;
+}
+
+.box_1>h1 {
+    color: var(--blue);
+}
+
+.box_1>h3 {
+    color: var(--grey);
+}
+
+.box_2 {
+    grid-area: box2;
+    place-self: center;
+}
+
+.box_3 {
+    grid-area: box3;
+    place-self: center;
+}
+
+.box_4 {
+    grid-area: box4;
+    place-self: center;
+}
+
+
+button {
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+    padding: 5px 0;
+    text-align: center;
+    width: 100px;
+    border: 0px;
+}
+
+
+.footer {
+    margin-top: 30px;
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: var(--white);
+}
+
+.footer>div {
+    place-self: center;
+}
+
+.footer_rrss>img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.footer_contact>h5 {
+    text-align: center;
+}
+
+
+.developer {
+    background-color: var(--grey);
+    text-align: center;
+    color: var(--white);
+}
+
+.developer>p {
+    margin: 0;
+}
+
+
+
+
+hr.solid {
+    border-top: 3px solid #bbb;
+    width: 85vw;
+}
